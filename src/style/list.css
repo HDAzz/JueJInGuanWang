@@ -1,5 +1,9 @@
 .container-left
 {
     display: flex;
-    background-color: blueviolet;
+    background-color: rgb(197, 246, 239);
+    width: 700px;
+    height: auto;
+    margin-left: 250px;
+    ;
 }   
