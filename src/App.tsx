@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navigator></Navigator>
+      <List></List>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
