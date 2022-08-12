@@ -18,5 +18,8 @@ export function Navigator()
                         <li><span>插件</span></li>
                     </ul>
                 </nav>
+                <nav className="sub-nav">
+
+                </nav>
             </div>)
 }
