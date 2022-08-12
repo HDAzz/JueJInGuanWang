@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Navigator } from './components/navigator'
+import { List } from './components/list'
 
 function App() {
   const [count, setCount] = useState(0)
