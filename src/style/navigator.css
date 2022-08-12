@@ -12,3 +12,12 @@ li
     margin-left: 10px;
     width: 80px;
 }
+.main-nav
+{
+    display: inline-block;
+}
+.container-up
+{
+    display: flex;
+    background-color: aqua;
+}

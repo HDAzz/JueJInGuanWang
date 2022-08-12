@@ -2,14 +2,12 @@ import React from "react";
 import '../style/navigator.css'
 export function Navigator()
 {
-    return (<div className="container">
-                <nav>
-                    <ul>
-                        <li>
-                        <a className="logo" href="/">
-                            <img src="http://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/6c61ae65d1c41ae8221a670fa32d05aa.svg" alt="稀土掘金" />
-                        </a>
-                        </li>
+    return (<div className="container-up">
+                <a className="logo" href="/">
+                    <img alt="稀土掘金" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"  />
+                </a>
+                <nav className="main-nav">
+                    <ul className="nav-tabs">
                         <li><span>首页</span></li>
                         <li><span>沸点</span></li>
                         <li><span>课程</span></li>

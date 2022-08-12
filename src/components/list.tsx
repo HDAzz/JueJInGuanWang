@@ -1,4 +1,5 @@
 import React from "react";
+import '../style/list.css'
 export function List()
 {
     return (<div className="container-left">
