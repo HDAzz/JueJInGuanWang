@@ -16,16 +16,16 @@
   float: left;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #d2a3c1aa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 .container-left{
-  width: 600px;
+  width: 700px;
   height: auto;
-  margin-left: 50px;
+  margin-left: 250px;
   ;
 }
 

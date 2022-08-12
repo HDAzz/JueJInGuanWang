@@ -4,12 +4,10 @@ export function List()
 {
     return (<div className="container-left" >
         <ul>
-        <li><a target="iframe_1">推荐</a></li>
-        <li><a target="iframe_1">最新</a></li>
-        <li><a target="iframe_1">热榜</a></li>
-        <iframe >
-
-        </iframe>
+        <li><a >推荐</a></li>
+        <li><a href="/?sort=newest">最新</a></li>
+        <li><a href="/?sort=hottest">热榜</a></li>
+        
         </ul>
     </div>)
 }
