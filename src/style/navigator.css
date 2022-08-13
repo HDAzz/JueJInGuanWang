@@ -14,7 +14,8 @@
     flex-direction: column; */
     display: flex;
     flex-direction: column;
-    background-color: rgb(253, 255, 237);
+    /* background-color: rgb(253, 255, 237); */
+    background-color: #fff;
     margin-bottom: 10px;
     height: 110px;
     width: 1700px;
