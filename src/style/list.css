@@ -5,12 +5,33 @@
     width: 700px;
     height: auto;
     margin-left: 250px;
-    ;
+    
 }
-.container-left li
+
+.up-class
 {
+    justify-content: space-evenly;
+    font-size: small;
     list-style: none;    /*去掉小圆点*/
     float: left;
-    margin-left: 10px;
+    margin-left: 20px;
     width: 40px;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.passage
+{
+    flex-direction: column;
+    list-style: none;
+    font-weight: bold;
+}
+
+/*.container-left li
+{
+    list-style: none;    /*去掉小圆点
+    float: left;
+    margin-left: 20px;
+    width: 40px;
+    overflow: auto;
 }   
