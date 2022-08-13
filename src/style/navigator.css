@@ -21,7 +21,8 @@
     list-style: none;    /*去掉小圆点*/
     float: left;
     /* margin-left: 10px; */
-    width: 40px;
+    width: 55px;
+    height: 50px;
 }
 .sub-nav-tabs li{
     width: 70px;
@@ -47,7 +48,12 @@
 }
 /* 悬停时 */
 /* 单页切换提示 */
-.container-up .main-nav-tabs :hover
+.container-up .main-nav-tabs li:hover
 {
-    border-bottom:2px solid blue;
+    border-bottom:2px solid #4a71b6;
+    font-weight: bold;
+}
+.container-up .sub-nav-tabs li:hover
+{
+    color: #5291cd;
 }
