@@ -1,24 +1,47 @@
-ul
+
+/* 上面的列表 */
+.main-nav-tabs
 {
-    width: 2000px;
+    width: 500px;
     overflow: hidden;
     white-space: nowrap;
 }
-
-li
+/* 下面的列表 */
+.sub-nav-tabs
 {
-    list-style: none;
+    width: 800px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* 列表元素 */
+.container-up li
+{
+    list-style: none;    /*去掉小圆点*/
     float: left;
     margin-left: 10px;
-    width: 80px;
+    width: 40px;
 }
-.main-nav
-{
-    display: inline-block;
-}
+
 .container-up
 {
+    /* display: flex;
+    flex-direction: column; */
     display: flex;
     background-color: rgb(253, 255, 237);
     margin-bottom: 10px;
+    height: 110px;
+
+    width: 1700px;
+}
+.logo img{
+    display: inline-block;
+    height: 20px;
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+}
+/* 悬停时 */
+.container-up li:hover
+{
+    border-bottom:2px solid blue;
 }

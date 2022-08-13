@@ -6,4 +6,11 @@
     height: auto;
     margin-left: 250px;
     ;
+}
+.container-left li
+{
+    list-style: none;    /*去掉小圆点*/
+    float: left;
+    margin-left: 10px;
+    width: 40px;
 }   
