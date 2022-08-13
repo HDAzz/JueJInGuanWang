@@ -1,10 +1,35 @@
 
+.container-1
+{
+    height: 60px;
+}
+.container-2
+{
+    height: 50px;
+    margin-left: 320px;
+}
+.container-up
+{
+    /* display: flex;
+    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 255, 237);
+    margin-bottom: 10px;
+    height: 110px;
+    width: 1700px;
+    font-size:small;
+}
+
+
 /* 上面的列表 */
 .main-nav-tabs
 {
     width: 500px;
     overflow: hidden;
     white-space: nowrap;
+    padding-left: 0;
+    /* border:1px solid red; */
 }
 /* 下面的列表 */
 .sub-nav-tabs
@@ -28,23 +53,14 @@
     width: 70px;
 
 }
-.container-up
-{
-    /* display: flex;
-    flex-direction: column; */
-    display: flex;
-    background-color: rgb(253, 255, 237);
-    margin-bottom: 10px;
-    height: 110px;
-
-    width: 1700px;
+.logo{
+    padding-top: 15px;
 }
 .logo img{
     display: inline-block;
-    height: 20px;
-    border: 1px solid red;
-    padding: 0;
-    margin: 0;
+    height: 25px;
+    /* border: 1px solid red; */
+    margin-left: 130px;
 }
 /* 悬停时 */
 /* 单页切换提示 */

@@ -3,10 +3,11 @@ import '../style/navigator.css'
 export function Navigator()
 {
     return (<div className="container-up">
-                <a className="logo" href="/">
+                <div className="container-1">
+                    <a className="logo" href="/">
                     <img alt="稀土掘金" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"  />
-                </a>
-                {/* 上面的导航条 */}
+                    </a>
+                    {/* 上面的导航条 */}
                     <ul className="main-nav-tabs">
                         <li><span>首页</span></li>
                         <li><span>沸点</span></li>
@@ -17,7 +18,9 @@ export function Navigator()
                         <li><span>APP</span></li>
                         <li><span>插件</span></li>
                     </ul>
-                {/* 下面的导航条 */}
+                </div>
+                <div className="container-2">
+                    {/* 下面的导航条 */}
                     <ul className="sub-nav-tabs">
                         <li>综合</li>
                         <li>关注</li>
@@ -30,5 +33,6 @@ export function Navigator()
                         <li>代码人生</li>
                         <li>阅读</li>
                     </ul>
+                </div>
             </div>)
 }
