@@ -18,6 +18,13 @@ export function Navigator()
                         <li><span>APP</span></li>
                         <li><span>插件</span></li>
                     </ul>
+
+                    <div className="search-box">
+                        <input type="text" className="search-btn" placeholder=" 探索稀土掘金"></input>
+                        <div className="search-icon-container">
+                            <img alt="搜索" className="search-icon" src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/1e8ab9a22f0ddc36349f60b38900d0bd.svg"></img>
+                        </div>
+                    </div>
                 </div>
                 <div className="container-2">
                     {/* 下面的导航条 */}
