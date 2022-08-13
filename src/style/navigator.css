@@ -9,19 +9,24 @@
 /* 下面的列表 */
 .sub-nav-tabs
 {
+    display: flex;
+    flex-wrap: wrap;
     width: 800px;
-    overflow: hidden;
     white-space: nowrap;
+    justify-content: space-evenly;
 }
 /* 列表元素 */
 .container-up li
 {
     list-style: none;    /*去掉小圆点*/
     float: left;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     width: 40px;
 }
+.sub-nav-tabs li{
+    width: 70px;
 
+}
 .container-up
 {
     /* display: flex;
@@ -41,7 +46,8 @@
     margin: 0;
 }
 /* 悬停时 */
-.container-up li:hover
+/* 单页切换提示 */
+.container-up .main-nav-tabs :hover
 {
     border-bottom:2px solid blue;
 }
