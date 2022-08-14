@@ -1,3 +1,23 @@
+
+/*
+container-up
+    container-1
+        logo
+        main-nav-tabs
+            link-item
+        search-box
+            search-btn
+            search-icon-container
+        add-group
+            add-btn
+            more
+                more-list
+                    item
+    container-2 
+        nav-item
+*/
+
+
 .container-up/*顶级容器*/
 {
     display: flex;
@@ -99,20 +119,11 @@
 .container-up a{
     color: black;
 }
-.more-list{
-    border: 1px solid red;
-}
-.more-list .item{
-    padding: 0;
-    margin-top: 0;
-    border: 1px solid red;
-    display: none;
-}
-.more{
-    margin: 0;
-    padding: 0;
-    border: 1px solid red;
-}
+/* add-group
+    add-btn
+    more
+        more-list
+            item */
 .add-group
 {
     display: flex;
@@ -126,11 +137,19 @@
     height: 40px;
     border: 1px solid red;
 }
-.unfold-icon
-{
+.more{
+    margin: 0;
+    padding: 0;
     border: 1px solid red;
 }
-.add-btn:focus .more-list .item
-{
-    display: block;
+.more-list{
+    border: 1px solid red;
 }
+.more-list .item{
+    padding: 0;
+    margin-top: 0;
+    border: 1px solid red;
+    display: none;
+}
+
+.add-btn:focus .more-list .item{display: block;}
