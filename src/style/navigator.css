@@ -20,19 +20,22 @@ container-up
 
 .container-up/*顶级容器*/
 {
+    height: 110px;width: 1700px;
+
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+  
     margin-bottom: 10px;
-    height: 110px;
-    width: 1700px;
+    
     font-size:small;
+    background-color: #fff;
     /* border: 1px solid red; */
 }
 /* 次级1 */
 .container-1
 {
     height: 60px;
+
     display: flex;
     /* border: 1px solid red; */
 }
@@ -40,17 +43,21 @@ container-up
 .container-2
 {
     height: 50px;
+
+    display: flex;
+
     margin-left: 320px;
     /* border: 1px solid black; */
-    display: flex;
 }
 .main-nav-tabs
 {
     width: 500px;
-    overflow: hidden;
-    white-space: nowrap;
+   
     padding-left: 0;
-    /* border:1px solid red; */
+
+    white-space: nowrap;
+    overflow: hidden;
+     /* border:1px solid red; */
 }
 .nav-item
 {
@@ -60,26 +67,32 @@ container-up
 /* 列表元素 */
 .container-up li
 {
-    list-style: none;    /*去掉小圆点*/
-    float: left;
     width: 55px;
-    /* border: 1px solid green; */
+
+    float: left;
+     
     padding:3px;
+    
+    list-style: none;    /*去掉小圆点*/
+    /* border: 1px solid green; */
 }
 .logo{
     padding-top: 15px;
 }
 .logo img{
-    display: inline-block;
     height: 25px;
-    /* border: 1px solid red; */
+
+    display: inline-block;
+    
     margin-left: 130px;
+    /* border: 1px solid red; */
 }
 /* 悬停时 */
 /* 单页切换提示 */
 .container-up .main-nav-tabs li:hover
 {
     border-bottom:3px solid #4a71b6;
+
     font-weight: bold;
 }
 .container-up .sub-nav-tabs li:hover
@@ -89,32 +102,38 @@ container-up
 
 .search-btn
 {
-    width: 300px;
-    height: 30px;
+    width: 300px;height: 30px;
+
     transition: all 0.3s ease-in-out;
     /* border: 1px solid red; */
 }
 .search-box
 {
+    height: 35px; width: 300px;
+
     display: flex;
+
     margin-top: 10px;
     margin-left: 120px;
-    height: 35px;
-    width: 300px;
+
+    transition: all 0.3s ease-in-out;
+
     border: 1px solid red;
-   transition: all 0.3s ease-in-out;
 }
 .search-btn:focus
 {
     width:440px;
+
     border-color: #4a71b6;
 }
 .search-icon
-{
-    /* border: 1px solid red; */
+{  
     height: 25px;
-    background-color: #f4f5f5;
+    
     margin-top: 3px;
+
+    background-color: #f4f5f5;
+    /* border: 1px solid red; */
 }
 .container-up a{
     color: black;
@@ -127,29 +146,31 @@ container-up
 .add-group
 {
     display: flex;
-    border: 1px solid red;
+    
     margin-left: 10px;
     padding: 10px;
+
+    border: 1px solid red;
 }
 .add-btn
 {
-    width: 105px;
-    height: 40px;
+    width: 105px;height: 40px;
     border: 1px solid red;
 }
 .more{
-    margin: 0;
-    padding: 0;
+    margin: 0;padding: 0;
     border: 1px solid red;
 }
 .more-list{
     border: 1px solid red;
 }
 .more-list .item{
-    padding: 0;
-    margin-top: 0;
-    border: 1px solid red;
     display: none;
+
+    padding: 0;margin-top: 0;
+    
+    border: 1px solid red;
+    
 }
 
 .add-btn:focus .more-list .item{display: block;}
