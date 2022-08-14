@@ -79,9 +79,9 @@
     display: flex;
     margin-top: 10px;
     margin-left: 120px;
-    height: 20px;
-    width: 500px;
-    /* border: 1px solid red; */
+    height: 35px;
+    width: 300px;
+    border: 1px solid red;
    transition: all 0.3s ease-in-out;
 }
 .search-btn:focus
@@ -96,4 +96,41 @@
     background-color: #f4f5f5;
     margin-top: 3px;
 }
-/* 上面的列表 */
+.container-up a{
+    color: black;
+}
+.more-list{
+    border: 1px solid red;
+}
+.more-list .item{
+    padding: 0;
+    margin-top: 0;
+    border: 1px solid red;
+    display: none;
+}
+.more{
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+.add-group
+{
+    display: flex;
+    border: 1px solid red;
+    margin-left: 10px;
+    padding: 10px;
+}
+.add-btn
+{
+    width: 105px;
+    height: 40px;
+    border: 1px solid red;
+}
+.unfold-icon
+{
+    border: 1px solid red;
+}
+.add-btn:focus .more-list .item
+{
+    display: block;
+}
