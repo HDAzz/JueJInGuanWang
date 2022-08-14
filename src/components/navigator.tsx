@@ -27,19 +27,37 @@ export function Navigator()
                     </div>
                 </div>
                 <div className="container-2">
-                    {/* 下面的导航条 */}
-                    <ul className="sub-nav-tabs">
-                        <li>综合</li>
-                        <li>关注</li>
-                        <li>后端</li>
-                        <li>前端</li>
-                        <li>Android</li>
-                        <li>iOS</li>
-                        <li>人工智能</li>
-                        <li>开发工具</li>
-                        <li>代码人生</li>
-                        <li>阅读</li>
-                    </ul>
+                    {/* 事实证明，文字不等长得用div一个一个装 */}
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>综合</div>    
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>关注</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>后端</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>前端</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>Android</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>iOS</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>人工智能</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>开发工具</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>代码人生</div>
+                    </a>
+                    <a className="nav-item" href="#">
+                        <div category-popover-box>阅读</div>
+                    </a>
                 </div>
             </div>)
 }

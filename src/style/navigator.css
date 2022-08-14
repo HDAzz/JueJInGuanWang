@@ -1,4 +1,4 @@
-.container-up
+.container-up/*顶级容器*/
 {
     display: flex;
     flex-direction: column;
@@ -7,18 +7,66 @@
     height: 110px;
     width: 1700px;
     font-size:small;
+    /* border: 1px solid red; */
 }
-
+/* 次级1 */
 .container-1
 {
     height: 60px;
     display: flex;
+    /* border: 1px solid red; */
 }
+/* 次级二 */
 .container-2
 {
     height: 50px;
     margin-left: 320px;
+    /* border: 1px solid black; */
+    display: flex;
 }
+.main-nav-tabs
+{
+    width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 0;
+    /* border:1px solid red; */
+}
+.nav-item
+{
+    margin: 10px;
+}
+
+/* 列表元素 */
+.container-up li
+{
+    list-style: none;    /*去掉小圆点*/
+    float: left;
+    width: 55px;
+    /* border: 1px solid green; */
+    padding:3px;
+}
+.logo{
+    padding-top: 15px;
+}
+.logo img{
+    display: inline-block;
+    height: 25px;
+    /* border: 1px solid red; */
+    margin-left: 130px;
+}
+/* 悬停时 */
+/* 单页切换提示 */
+.container-up .main-nav-tabs li:hover
+{
+    border-bottom:3px solid #4a71b6;
+    font-weight: bold;
+}
+.container-up .sub-nav-tabs li:hover
+{
+    color: #5291cd;
+}
+
 .search-btn
 {
     width: 300px;
@@ -49,53 +97,3 @@
     margin-top: 3px;
 }
 /* 上面的列表 */
-.main-nav-tabs
-{
-    width: 500px;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 0;
-    /* border:1px solid red; */
-}
-/* 下面的列表 */
-.sub-nav-tabs
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    white-space: nowrap;
-    justify-content: space-evenly;
-}
-/* 列表元素 */
-.container-up li
-{
-    list-style: none;    /*去掉小圆点*/
-    float: left;
-    /* margin-left: 10px; */
-    width: 55px;
-    height: 40px;
-}
-.sub-nav-tabs li{
-    width: 70px;
-
-}
-.logo{
-    padding-top: 15px;
-}
-.logo img{
-    display: inline-block;
-    height: 25px;
-    /* border: 1px solid red; */
-    margin-left: 130px;
-}
-/* 悬停时 */
-/* 单页切换提示 */
-.container-up .main-nav-tabs li:hover
-{
-    border-bottom:2px solid #4a71b6;
-    font-weight: bold;
-}
-.container-up .sub-nav-tabs li:hover
-{
-    color: #5291cd;
-}
