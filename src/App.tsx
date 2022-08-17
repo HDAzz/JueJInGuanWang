@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { Navigator } from './components/navigator'
 import { List } from './components/list'
+import { Sidebar } from './components/sidebar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,7 @@ function App() {
       </div>
 
       <div id='container-right'>
-
+       <Sidebar></Sidebar>
       </div>
 
     </div>
