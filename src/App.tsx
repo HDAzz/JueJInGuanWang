@@ -9,18 +9,22 @@ function App() {
 
   return (
     <div className="App">
+
       <div id="container-up">
         <Navigator></Navigator>
       </div>
-  
-      <div id='container-left'>
-        <List></List>
-      </div>
 
-      <div id='container-right'>
-       <Sidebar></Sidebar>
-      </div>
+      <div className='contain'>
 
+        <div id='container-left'>
+          <List></List>
+        </div>
+
+        <div id='container-right'>
+         <Sidebar></Sidebar>
+        </div>
+        
+      </div>
     </div>
   )
 }

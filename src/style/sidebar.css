@@ -1,12 +1,13 @@
 .container-right
 {
-    display:flexbox;
+    position:sticky;
+    display: flex;
     background-color: rgb(255, 255, 255);
     width: 220px;
     height: auto;
     padding-left: 30px;
-    margin-left: 970px;
-    margin-top: 10px;
+    margin-left: 20px;
+    border:solid 1px red;
 }
 
 .title
@@ -21,8 +22,12 @@
 
 .button
 {
-    border: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 22px 22px;
     border-color:#4a71b6;
     flex-direction: row;
-    margin-right: 0px;
+    padding: 10px 12px 10px 12px;
+    font-size: medium;
+    color:#1a60d9;
+    background-color: #ffffff;
 }

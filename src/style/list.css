@@ -4,8 +4,9 @@
     background-color: rgb(255, 255, 255);
     width: 700px;
     height: auto;
-    margin-left: 250px;
+    margin-left: 200px;
     padding-left: 0px;
+    border: 1px red solid;
     
 }
 

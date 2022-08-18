@@ -20,4 +20,10 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-
+.contain{
+  display: flex;
+  width: 1300px;
+  height: 500px;
+  margin-left:50px;
+  border: solid 1px red;
+}
