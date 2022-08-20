@@ -37,6 +37,34 @@ export function Sidebar()
         </div>
         <div className="block3">
           <div className="firstline">
+            <li>
+              <img className="pic2" ></img>
+              <span className="title6">作者榜</span>
+            </li>
+          </div>
+          <hr className="hr"/>
+          <div className="firstline">
+            <button className="button1"></button>
+            <span className="title8">我是郑皓泽</span>
+          </div>
+          <hr className="hr"/>
+          <div className="firstline">
+            <button className="button1"></button>
+            <span className="title8">我</span>
+          </div>
+          <hr className="hr"/>
+          <div className="firstline">
+            <button className="button1"></button>
+            <span className="title8">喂我自己袋盐</span>
+          </div>
+          <hr className="hr"/>
+            <div className="firstline">
+            <button className="button2"></button>
+            <span className="title7">完整榜单  &gt;</span>
+            </div>
+        </div>
+        <div className="block4">
+          <div className="firstline">
             <img className="pic" src="http://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-tutu.d58819c.png"></img>
             <a className="title3" href="">稀土掘金漫游指南</a>
           </div>
@@ -49,7 +77,7 @@ export function Sidebar()
             <a className="title3" href="">前往掘金翻译计划</a>
           </div>
         </div>
-        <div className="block4">
+        <div className="block5">
           <div className="firstline">
             <li>
             <a className="title4" href="">用户协议 </a>
