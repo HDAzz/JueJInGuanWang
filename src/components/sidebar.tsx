@@ -36,7 +36,56 @@ export function Sidebar()
           <div><span className="secondline">一个帮助开发者成长的社区</span></div>
         </div>
         <div className="block3">
-          
+          <div className="firstline">
+            <img className="pic" src="http://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-tutu.d58819c.png"></img>
+            <a className="title3" href="">稀土掘金漫游指南</a>
+          </div>
+          <div className="firstline">
+            <img className="pic" src="http://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-extension-icon.4b79fb4.png"></img>
+            <a className="title3" href="">安装掘金浏览器插件</a>
+          </div>
+          <div className="firstline">
+            <img className="pic" src="http://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-miner.b78347c.png"></img>
+            <a className="title3" href="">前往掘金翻译计划</a>
+          </div>
+        </div>
+        <div className="block4">
+          <div className="firstline">
+            <li>
+            <a className="title4" href="">用户协议 </a>
+            <a className="title4" href="">营业执照 </a>
+            <a className="title4" href="">隐私政策 </a>
+            <a className="title4" href="">关于我们 </a>
+            </li>
+          </div>
+          <div className="firstline">
+            <li>
+              <a className="title4" href="">站点地图 </a>
+              <a className="title4" href="">使用指南 </a>
+              <a className="title4" href="">友情链接 </a>
+              <a className="title4" href="">更多文章 </a>
+            </li>
+          </div>
+          <div className="firstline">
+            <a className="title4" href="">京ICP备18012699号-3</a>
+          </div>
+          <div className="firstline">
+            <img className="pic1" src="http://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/police.d0289dc.png"></img>
+            <a className="title4" href=""> 京公网安备11010802026719号</a>
+          </div>
+          <div className="firstline"><li className="title5">版权所有：北京北比信息技术有限公司</li></div>
+          <div className="firstline"><li className="title5">公司地址：北京市海淀区信息路甲28号13层B座13B-5</li></div>
+          <div className="firstline"><li className="title5">公司座机：010-83434395</li></div>
+          <div className="firstline">
+            <li className="title5">举报邮箱：
+            <a className="title4" href="mailto:feedback@xitu.io">feedback@xitu.io</a>
+            </li>
+          </div>
+          <div className="firstline"><a className="title4" href="">©2022 稀土掘金</a></div>
+          <div className="firstline">
+          <a href="https://weibo.com/xitucircle"><img alt="微博" className="pic1" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/weibo.0cd39f5.png" /></a>
+          <a href=""><img alt="微信" className="pic1" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/wechat.ce329e6.png"/></a>
+          </div>
         </div>
     </ul>)
 
