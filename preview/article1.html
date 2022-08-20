@@ -1,0 +1,205 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:article1</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<p>前期的麻烦是减少后期更多的沟通成本，减少返工情况。</p>
+<h2 id="-">对齐需求</h2>
+<p>开发前，前后端需要对齐一遍需求及对应接口列表，交互方式</p>
+<h2 id="-">文档</h2>
+<p>接口文档一定要落在线的，禁忌：</p>
+<ul>
+<li>禁口头通知、描述等，容易遗忘</li>
+<li>禁聊天文本发送，查找记录麻烦</li>
+<li>禁私自修改文档，一定要通知对应人员</li>
+<li>禁没有注释，要明确接口字段含义，防止歧义</li>
+</ul>
+<h2 id="-">接口规范</h2>
+<p>关于接口输入输出一些规范讨论，后端可以看看阿里巴巴 <a href="https://github.com/alibaba/p3c">Java开发手册.pdf</a></p>
+<h3 id="url-">URL参数长度</h3>
+<p>通过<code>GET</code>请求传参数长度限制，不同浏览器对长度限制不一样，最小超过 2048 字节</p>
+<h3 id="-">数据类型要一致</h3>
+<p>不要前端枚举获取的<code>Number</code>类型，提交之后，获取输出的变成<code>String</code>类型，不同表的数据类型请尽量保持一致，不然影响前端判断</p>
+<h3 id="-">字段名尽量保持一致</h3>
+<p>输入输出字段名尽量保持一致，比如保存接口的参数字段名和查询详情的参数字段名完全不一样</p>
+<ul>
+<li>不利于前端理解，假如多个后端开发对接一个前端，一个业务字段每个接口key都不一样，前端理解成本高，需要转换理解</li>
+<li>不利于前端开发，查询和保存都要相互转换对应字段名</li>
+</ul>
+<blockquote>
+<p>因为字段名被占用、关键字等原因就是要不一样，那就是尽量减少这种情况</p>
+</blockquote>
+<h3 id="-">字段名风格</h3>
+<p>可以统一成<code>lowerCamelCase</code>风格，方便理解和使用，比如<code>error-message</code>这字段名无法被前端当变量名使用的</p>
+<h3 id="-">唯一索引</h3>
+<p>确保列表数组有唯一索引，比如 <code>ID</code> <code>Code</code> 等，前端遍历需要确保唯一性</p>
+<h3 id="-">时间格式</h3>
+<p>前后端的时间格式统一为 <code>yyyy-MM-dd HH:mm:ss</code>，统一为 GMT，减少前后端格式沟通</p>
+<blockquote>
+<p>前端对应格式 <code>YYYY-MM-DD HH:mm:ss</code></p>
+</blockquote>
+<h3 id="-">空值字段</h3>
+<p><strong>前端输入</strong> 接口参数
+一般对象属性值是 <code>undefined</code> 和 <code>null</code>值，前端会过滤不传，如果需要传字段请让前端传空字符 <code>&#39;&#39;</code></p>
+<p>字段属性是<code>undefined</code>在 <strong>JSON </strong>当中会被过滤，在数组中会被替换成<code>null</code>，所以后端<code>post</code>请求不会接收到值是<code>undefined</code>字段，<code>get</code>请求统一前端过滤处理</p>
+<pre><code class="lang-javascript">JSON.stringify({key: undefined})
+// &#39;{}&#39;
+
+JSON.stringify({ x: [10, undefined] });
+// &#39;{&quot;x&quot;:[10,null]}&#39;
+</code></pre>
+<p><strong>后端输出</strong> 接口数据
+确保接口返回的字段不会缺失，一般值为空：基础类型可以设置成<code>&#39;&#39;</code>或<code>null</code>，引用类型可以设置成 <code>[]</code>或<code>{}</code> ，如果字段缺失：</p>
+<ul>
+<li>无法确定是缺少字段还是没有数据</li>
+<li>集合或数组时需要做繁琐的空值判断
+<code>`</code>javascript
+// 返回 null 或 不返回
+const result = {
+&quot;status&quot;: 200,
+&quot;data&quot;: null
+}</li>
+</ul>
+<p>// 前端
+if(status === 200 &amp;&amp; data &amp;&amp; data.list){}</p>
+<pre><code>&gt; 前端觉得怎么能把代码稳定性交给和后端约定的规范？这其实没有限制前端去加空值判断，好的规范是一种双重保障，减少双方失误导致的问题
+
+
+### 数据列表或集合
+数据列表相关的接口返回，如果为空，则返回空数组`[]`或空集合`{}`，**注意是任何深度的数组和集合的数据都要**
+
+### 分页数据
+
+- 用户输入参数的小于 1，则前端返回第一页参数给后端
+- 后端发现用户输入的参数大于总页数，直接返回最后一页
+```javascript
+const result = {
+  &quot;status&quot;: 200,
+  &quot;data&quot;: {
+    &quot;list&quot;: [],
+    &quot;total&quot;: 0,
+    &quot;pageSize&quot;: 10
+  }
+}
+</code></pre><h3 id="-">请求方式</h3>
+<p>常用的 3 种提交：</p>
+<ul>
+<li>POST / GET 方法 <code>application/x-www-form-urlencoded</code>，<code>&lt;form&gt;</code>标签等默认提交方式
+<code>`</code>javascript
+// POST
+Content-Type: application/x-www-form-urlencoded</li>
+</ul>
+<p>foo=bar&amp;baz=The+first+line.%0D%0AThe+second+line.%0D%0A</p>
+<p>// GET 放到URL后
+?foo=bar&amp;baz=The%20first%20line.%0AThe%20second%20line.</p>
+<pre><code>
+- POST 方法 `multipart/form-data`，文件上传常用提交方式
+```javascript
+// POST
+Content-Type: multipart/form-data; boundary=---------------------------314911788813839
+
+-----------------------------314911788813839
+Content-Disposition: form-data; name=&quot;foo&quot;
+
+bar
+-----------------------------314911788813839
+Content-Disposition: form-data; name=&quot;baz&quot;
+
+The first line.
+The second line.
+
+-----------------------------314911788813839--
+</code></pre><ul>
+<li>POST / GET 方法 <code>application/json</code>，常用的请求JSON数据方式
+<code>`</code>javascript
+// POST
+Content-Type: application/json</li>
+</ul>
+<p>{&quot;foo&quot;: &quot;bar&quot;}</p>
+<p>// GET
+?foo=bar
+<code>`</code></p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
