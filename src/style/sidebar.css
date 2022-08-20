@@ -1,59 +1,121 @@
 .container-right
 {
-    width: 300px;
+    width: 230px;
     height: 1000px;
 
-    position:sticky;
-    display: flex;
-    background-color: rgb(255, 255, 255);
- 
     padding-left: 30px;
     margin-top: 0px;
     margin-left: 20px;
+
+    position:sticky;
+    display:block;
+    background-color: #f4f5f5;
+ 
     border:solid 1px green;
-    clear: both;
 }
 
-.container-right ul{
-    margin-left: -40px;
+.block1{
+    width: 230px;
+    height: 80px;
+
+    margin-left: -30px;
+    margin-top: 0px;
+    
     display: flex;
     flex-direction: column;
-    border: solid 1px blue;
     overflow: auto;
+    background-color: #ffffff;
+
+    /*border: solid 1px blue;*/
 }
 
-.firstline{
+.firstline{ 
     display: flex;
 }
 
-.title
+.icon{
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.title1
 {
-    flex-direction: row;
     font-weight:bold;
     font-size:large;
-    display: flex;
+
+    margin-top: 12px;
+    margin-left: 15px;
+
     position: static;
-    margin-block: 10px;
+    float:left;
+    display: flex;
+    flex-direction: row;
     white-space: nowrap;
 }
 
 .button
 {
+    font-size:small;
+
     border-style: solid;
     border-radius: 22px 22px 22px 22px;
-    border-color:#4a71b6;
-    display: inline;
+    border-color:#1a60d9;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    padding: 5px 12px;
+
     float: left;
-    padding: 10px 12px 10px 12px;
-    font-size: medium;
+    
     color:#1a60d9;
     background-color: #ffffff;
     white-space: nowrap;
 }
 
-.wen
+.secondline
 {
+    font-size:smaller;
+
+    margin-left: 50px;
+    margin-top: 3px;
+
     display: flex;
     white-space: nowrap;
     text-align: left;
+}
+
+.block2{
+    width: 230px;
+    height: 70px;
+
+    margin-top: 10px;
+    margin-left: -30px;
+
+    background-color: #ffffff;
+}
+
+.download{
+    height: 50px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.title2{
+    font-weight:bolder;
+    font-size:small;
+
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+span.secondline{
+    font-weight:normal;
+    font-size:x-small;
+    color:gray;
+
+    margin-left: 75px;
+    margin-top: -33px;
 }

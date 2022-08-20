@@ -1,56 +1,71 @@
 .container-left/*总容器*/
 {
-    display: flex;
-    background-color: rgb(255, 255, 255);
     width: 700px;
     height: auto;
+
     margin-left: 200px;
     padding-left: 0px;
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+
     border: 1px red solid;
     
 }
 
 .up-class/*上侧导航栏*/
 {
-    justify-content: space-evenly;
-    font-size: small;
-    list-style: none;    /*去掉小圆点*/
-    float: left;
-    margin-left: 20px;
     width: 30px;
-    overflow: auto;
-    flex-direction: row;
+
     margin-block: 5px;
+    margin-left: 20px;
+
+    font-size: small;
+
+    float: left;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;    /*去掉小圆点*/
+    
+    overflow: auto;
 }
 
 .line/*竖分割线*/
 {
-    position: relative;
-    background-color: #c9c9c9;
     width:1px;
     height: 20px;
-    float: left;
-    justify-content: space-evenly;
+
     margin-left: 20px;
     margin-top: 5px;
+
+    position: relative;
+    background-color: #c9c9c9;
+    float: left;
+    justify-content: space-evenly;
 }
 
 .writer
 {
-    flex-direction: row;
     font-weight: 400;
     font-size: small;
+
+    margin-top: 40px;
+
     display: flex;
     text-align: left;
+    flex-direction: row;
 }
 
 .passage/*文章列表*/
 {
+    font-weight: bold;
+
+    margin-top: 10px;
+
     flex-direction: column;
     list-style: none;
-    font-weight: bold;
     text-align: left;
-    margin-top: 50px;
+    
     overflow: auto;
 }
 
