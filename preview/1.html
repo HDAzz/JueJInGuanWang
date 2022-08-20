@@ -1,0 +1,191 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:1</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<blockquote>
+<p> <strong>这是我参与「第四届青训营 」笔记创作活动的的第3天</strong></p>
+</blockquote>
+<h1 id="-">数据可视化基础</h1>
+<h2 id="-">什么是数据可视化？</h2>
+<p>生活中的数据可视化无处不在。
+图表<br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7148742ad25744348189bd79facd265e~tplv-k3u1fbpfcp-watermark.image?" alt="1660489056191.png">
+地图<br><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/61e11cb5ebc54360a5c681f04d801585~tplv-k3u1fbpfcp-watermark.image?" alt="1660489080729.png">
+到底什么是数据可视化？</p>
+<blockquote>
+<p><strong>Anything that converts data into a visual representation（like charts，graphs，maps，sometimes even just tables）</strong></p>
+</blockquote>
+<p>也就是说用各种方式来形象地呈现数据。
+<br>
+<strong>数据可视化的分类：</strong></p>
+<ul>
+<li>科学可视化</li>
+<li>信息可视化</li>
+<li>可视化分析</li>
+</ul>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d875ebf48657458ea8e9fb80d95d681f~tplv-k3u1fbpfcp-watermark.image?" alt="1660489260366.png"></p>
+<h2 id="-">为什么要数据可视化？</h2>
+<ol>
+<li>记录信息</li>
+<li>分析推理</li>
+<li>证实假设</li>
+<li>交流思想</li>
+</ol>
+<p>安斯库姆四重奏(运用图表很好地展现了数据):
+<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9a25f5c9e9604f3c9322ffc174ee7eec~tplv-k3u1fbpfcp-watermark.image?" alt="1660489288431.png"></p>
+<h2 id="-">可视化设计原则和方法</h2>
+<p>可视化设计要<strong>正确地表达数据中的信息而不产生偏差与歧义</strong></p>
+<ol>
+<li><strong>透视失真</strong><br>
+ 如果数字由视觉元素表示的，那么它们应该与视觉元素的感知程度成正比。
+ <br>使用清晰、详细和彻底的标签，以避免图形失真和含糊不清。</li>
+<li><strong>图形设计&amp;数据尺度</strong>
+ <br>视觉预期:
+ <br>图形的每一部分都会产生对其的视觉预期，而这往往决定了眼睛实际看到的东西；错误的数据洞察，产生于图形的某个地方发生不正确的视觉预期推断。</li>
+<li><strong>联系上下文</strong>
+<br> <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7a0387c824754811a54080e6dcbb15af~tplv-k3u1fbpfcp-watermark.image?" alt="1660489348580.png"><br>数据补全，展示关系</li>
+</ol>
+<h3 id="-">可视化设计原则</h3>
+<ul>
+<li>准确展示数据</li>
+<li><strong>节省笔墨</strong></li>
+<li><strong>节省空间</strong></li>
+<li><strong>消除不必要的“无价值”图形</strong></li>
+<li>在最短时间内传达最多的信息<h4 id="-">如何节省笔墨</h4>
+要计算最大化数据墨水占比</li>
+</ul>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6d1372a16af4748a0619f3a1a2134f1~tplv-k3u1fbpfcp-watermark.image?" alt="1660489395344.png"></p>
+<h3 id="-">可视化结论</h3>
+<p>人类视觉系统观察的是<strong>变化</strong>，而不是绝对值，并且容易被边界吸引。<br>
+在可视化设计中，设计者需要充分考虑到人类感知系统的这些现象，以使得可视化结果不会存在阻碍或误导用户的可视化元素。</p>
+<h2 id="-">格式塔学派理论</h2>
+<p>格式塔学派的理论核心是<strong>整体决定部分的性质，部分依从于整体</strong>。结构比元素重要，视觉形象首先作为统一的整体被认识。感知的事物大于眼睛见到的事物。
+<br>这一理论较为系统的对人类如何发现图形元素之间的关联性进行了全面总结，被广泛应用于视觉设计当中。</p>
+<ol>
+<li><strong>就近原则</strong></li>
+</ol>
+<p>当视觉元素在空间距离上接近时，入门通常倾向于将他们归为一组。因此将事物放于相近位置，可以突出它们的关联性。</p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a54c516712ce4317928be820cc82664d~tplv-k3u1fbpfcp-watermark.image?" alt="1660489536161.png"></p>
+<ol start="2">
+<li><strong>相似原则</strong></li>
+</ol>
+<p>当事物在形状、大小、颜色、强度等属性方面比较相似时，这些物体就容易被看做一个整体。</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/60cd107cd2ba4ad38d18a6aaa086f3eb~tplv-k3u1fbpfcp-watermark.image?" alt="1660489509453.png"></p>
+<ol start="3">
+<li><p><strong>连续性原则</strong></p>
+<p>人们在观察事物的时候会很自然的沿着物体的边界，将不连续的物体视为连续的整体。</p>
+</li>
+</ol>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/099bcfbb7824465b818d62af9c3a660d~tplv-k3u1fbpfcp-watermark.image?" alt="1660489563512.png"></p>
+<ol start="4">
+<li><strong>闭合原则</strong></li>
+</ol>
+<p>有些图形可能本身是不完整，不闭合的，但主体有一种使其闭合的倾向，人们就会很容易地感知整个物体 而忽略未闭合的特征。</p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5d9297ff56274171a5640d8cf8210621~tplv-k3u1fbpfcp-watermark.image?" alt="1660489580540.png"></p>
+<ol start="5">
+<li><strong>共势原则</strong></li>
+</ol>
+<p>如果一个对象中的一部分都向共同的方向去运动，那这些共同移动的部分就容易被感知</p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fee6766a7001484db7bc21cf8a1975ec~tplv-k3u1fbpfcp-watermark.image?" alt="1660489599595.png"></p>
+<ol start="6">
+<li><strong>图形与背景关系原则</strong></li>
+</ol>
+<p>大脑通常认为构图中最小的物体是图形，而更大的物体是背景。
+<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a4fa2c0341bf4556bc9660882a21295c~tplv-k3u1fbpfcp-watermark.image?" alt="1660489613385.png"></p>
+<h2 id="-">视觉编码</h2>
+<p>视觉编码是一种将数据信息映射成可视化元素的技术。</p>
+<ul>
+<li>可视化符号</li>
+<li>视觉通道</li>
+</ul>
+<h2 id="-">面向前端的可视化工具</h2>
+<ul>
+<li><strong>D3</strong></li>
+<li><strong>Vega</strong></li>
+<li><strong>G2</strong><h1 id="-">个人总结</h1>
+回忆之前的讲课内容，我们不难发现本节课对数据可视化的分析充分印证了如今前端工作的重心逐渐转移向用户的体验。数据可视化是优化用户体验的关键一步，毕竟谁也不想跟着一堆枯燥的数据打交道。</li>
+</ul>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
